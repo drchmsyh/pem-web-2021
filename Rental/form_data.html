@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lengkapi Data</title>
+    <link rel="stylesheet" href="assets/css/style_form_data.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="sewa-button">
+                <a href="index.html"><img src="assets/img/sewa.svg"></a>
+            </div>
+            <div class="logo-text">
+                <a href="index.html"><img src="assets/img/logo-text.svg" alt=""></a>
+            </div>
+        </nav>
+        
+
+        <!-- section form data-->
+        
+        <div class="data">
+            <h1>Lengkapi Data berikut</h1>
+            <p>Masukkan data yang valid, agar proses  rental tidak terjadi kendala.</p>
+            <form action="proses.php" method="post">
+                <table>
+                    <tr>
+                        <td><label>Nama Lengkap</label></td>
+                        <td></td>
+                        <td><input type="text" name="fnama_lengkap"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Nomor telepon </label></td>
+                        <td></td>
+                        <td><input type="text" name="fno_telepon"><br></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email</label></td>
+                        <td></td>
+                        <td><input type="email" name="femail" ></td>
+                    </tr>
+                    <tr>
+                        <td><label>Alamat Lengkap</label></td>
+                        <td></td>
+                        <td><input type="text" name="falamat_lengkap"><br></td>
+                    </tr>
+                    <tr>
+                        <td><label>Rental</label></td>
+                        <td></td>
+                        <td>
+                            <select id="rental" name="frental" ><br>
+                                <option selected="">-Pilih salah satu-</option>
+                                <option name="paket_ps4" id="ps4pro" value="150000">Paket PS4 Pro</option>
+                                <option name="paket_sony" id="sonycam"  value="200000">Paket Kamera Sony</option>
+                                <option value="--">---</option>
+                                <option value="--">---</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Masa Sewa </label></td>
+                        <td></td>
+                        <td style="font-size: 20px;" ><input style="width: auto;" type="number" min="0" name="fmasa_sewa" id="masaSewa" value="0" onchange="harga()"> hari</td>
+                    </tr>
+                    <tr>
+                        <td><label>Harga Harian </label></td>
+                        <td></td>
+                        <td style="font-size: 20px;"><input style="width: auto;" readonly type="text" name="fharian" id="perHari" value=""> / hari</td>
+                    </tr>
+                    <tr>
+                        <td><label>Total Harga</label></td>
+                        <td></td>
+                        <td><input style="width: auto;" readonly type="text" name="total_harga" id="tot_hrg" value=""></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input class="btn-next" type="submit" name="fsubmit" value="Simpan" onclick="return confirm('Simpan data?')">
+                        </td>
+                        
+                    </tr>
+                </table>
+                    
+
+                <script type="text/javascript">
+                    function harian() {
+                        harga_harian = 0 + (document.getElementById('rental').value );
+                        document.getElementById('perHari').value = harga_harian;
+                        }
+                </script>
+
+                <script type="text/javascript">
+                    function harga() {
+                        jumlah_harga = (document.getElementById('rental').value )*(document.getElementById('masaSewa').value);
+                        document.getElementById('perHari').value = document.getElementById('rental').value;
+                        document.getElementById('tot_hrg').value = jumlah_harga;
+                        }
+                </script>
+            </form>
+        </div>
+    </div>
+    
+    <div class="container">
+        <footer>
+            <div class="logo-desc">
+                <img src="assets/img/logo-text.svg" alt="" style="margin-top: 2px;">
+                <p>Website untuk keperluan rental <br>
+                berupa barang, jasa, maupun tempat. <br>
+                <br>
+                © 2022  Rental</p>
+            </div>
+
+            <div class="sosmed">
+                <p>Connect with Us</p>
+                <a href="#"><img src="assets/img/WhatsApp.svg" alt=""></a>
+                <a href="#"><img src="assets/img/Instagram.svg" alt=""></a>
+                <a href="#"><img src="assets/img/Facebook.svg" alt=""></a>
+                <a href="#"><img src="assets/img/Twitter Circled.png" alt="" style="margin-right: 35px;"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

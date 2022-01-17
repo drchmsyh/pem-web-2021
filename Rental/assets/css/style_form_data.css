@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: "Quicksand";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+}
+
+
+
+.data{
+    margin: auto;
+    padding: 20px 25px;
+    width: 70%;
+}
+.data h1{
+    font-size: 56px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.data p{
+    font-size: 20px;
+    text-align: center;
+    color: #6A6A6A;
+    margin-bottom: 30px;
+}
+td label{
+    text-align: left;
+    margin: auto auto;
+    font-size: 20px;
+    color: #000000;
+}
+td input{
+    width: calc(750px - 20px);
+    padding: 8px 10px;
+    margin: 10px 10%;
+    border: 2px solid #c4c4c4;
+    background-color: transparent;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+
+}
+td select{
+    width: auto;
+    padding: 8px 10px;
+    margin: 10px 10%;
+    border: 2px solid #c4c4c4;
+    background-color: transparent;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+td select option{
+    width: 370px;
+    height: 400px;
+    padding: 8px 10px;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    border: 2px solid #c4c4c4;
+    background-color: transparent;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+td input.btn-next{
+    margin-top: 50px;
+    margin-left: 80%;
+    background-color: #ffffff;
+    padding: 13px 29px;
+    border: 2px solid #c4c4c4;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+    width: 200px;
+    height: 55px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.btn-next:hover{
+    background-color: #3BB4F9;
+    color: white;
+}
+
+
+
+
+
+footer{
+    width: 100%;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 256px;
+}
+.logo-desc img{
+    margin: 0px 0px;
+    padding: 10px 30px;
+}
+.logo-desc p{
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+.sosmed p{
+    font-size: 20px;
+    padding: 15px;
+    margin-right: 35px;
+}
+
+.sosmed a{
+    
+    margin: 10px 5px;
+}
+
+.data h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10%;
+}
+
+button.button-1{
+    background-color: #3BB4F9;
+    padding: 13px 29px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    width: 156px;
+    height: 55px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 50vh;
+}
+
+button.button-1:hover{
+    background-color: #2a75a0;
+    color: white;
+}
+
+button.button-2{
+    background-color: transparent;
+    padding: 13px 29px;
+    border: 2px solid #C4C4C4 ;
+    border-radius: 20px;
+    color: #C4C4C4;
+    font-size: 20px;
+    font-weight: 500;
+    width: 156px;
+    height: 55px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 60%;
+}
+
+button.button-2:hover{
+    background-color: #999797;
+    color: white;
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: "Quicksand";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+}
+
+
+
+section.detail-produk{
+    display: flex;
+    width: 100%;
+    height: 95vh;
+}
+
+.detail-heading h1{
+    font-size: 64px;
+    padding: 10px 0px;
+    margin: 20px 0px;
+}
+
+.detail-text p{
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    padding: 20px;
+    margin-top: 110px;
+    line-height: 50px;
+}
+
+
+.rental-btn{
+    background-color: #3BB4F9;
+    padding: 13px 29px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    width: 256px;
+    height: 55px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 45%;
+}
+
+.rental-btn:hover{
+    background-color: #2a75a0;
+    color: white;
+}
+
+
+
+
+
+footer{
+    width: 100%;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 256px;
+}
+.logo-desc img{
+    margin: 0px 0px;
+    padding: 10px 30px;
+}
+.logo-desc p{
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+.sosmed p{
+    font-size: 20px;
+    padding: 15px;
+    margin-right: 35px;
+}
+
+.sosmed a{
+    
+    margin: 10px 5px;
+}

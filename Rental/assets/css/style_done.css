@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: "Quicksand";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+}
+.done{
+    margin-left: 10%;
+    padding: 20px 25px;
+    width: 80%;
+}
+.done-notif h2{
+    font-size: 32px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.done-notif  p{
+    font-size: 20px;
+    text-align: center;
+    color: #6A6A6A;
+
+    margin-bottom: 30px;
+}
+
+
+
+
+footer{
+    width: 100%;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 256px;
+}
+.logo-desc img{
+    margin: 0px 0px;
+    padding: 10px 30px;
+}
+.logo-desc p{
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+.sosmed p{
+    font-size: 20px;
+    padding: 15px;
+    margin-right: 35px;
+}
+
+.sosmed a{
+    
+    margin: 10px 5px;
+}
